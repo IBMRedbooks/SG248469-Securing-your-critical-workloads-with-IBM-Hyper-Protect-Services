@@ -1,4 +1,3 @@
-
 """
 This file contains user configured variables for the example code
 """
