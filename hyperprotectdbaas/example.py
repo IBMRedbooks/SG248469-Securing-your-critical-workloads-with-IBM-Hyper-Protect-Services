@@ -1,5 +1,5 @@
-from hyperprotectdbaas.dbaasapi import *
-from hyperprotectdbaas.variables import *
+from dbaasapi import *
+from variables import *
 
 # DBaaSManager object containing wrapped api endpoints
 dbaas_manager = DBaaSManager(

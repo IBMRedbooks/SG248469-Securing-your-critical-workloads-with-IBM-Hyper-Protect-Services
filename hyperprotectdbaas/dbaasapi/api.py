@@ -1,7 +1,7 @@
 """
 This class manages supported DBaaS REST API calls.
 """
-from hyperprotectdbaas.dbaasapi.session import Session
+from dbaasapi.session import Session
 
 
 class DBaaSManager(Session):
