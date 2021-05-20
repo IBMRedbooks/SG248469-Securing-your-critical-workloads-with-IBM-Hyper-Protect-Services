@@ -51,7 +51,7 @@ class Session:
             'accept': 'application/json',
             'api_key': self.api_key
         }
-        url = "https://{}:{}/api/v1/auth/token".format(self.ip, self.port)
+        url = "https://{}:{}/api/v3/auth/token".format(self.ip, self.port)
         self._log.debug("GET /auth/token url: {}".format(url))
         token_response = requests.get(url, headers=headers, verify=self._ssl_verify)
 
@@ -66,7 +66,7 @@ class Session:
 
     def _set_api_endpoint(self):
         """ Set DBaaS API endpoint """
-        self.dbaas_api_endpoint = "https://{}:{}/api/v1/{}".format(self.ip, self.port, self.user_id)
+        self.dbaas_api_endpoint = "https://{}:{}/api/v3/{}".format(self.ip, self.port, self.user_id)
         self._log.debug("DBaaS API endpoint updated: {}".format(self.dbaas_api_endpoint))
 
     def _set_headers(self):
